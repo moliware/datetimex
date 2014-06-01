@@ -5,6 +5,10 @@ except ImportError:
     from distutils.core import setup
 
 
+def requires():
+  with open('requirements.txt') as fd:
+    return map(lambda x: x.rstrip(), fd.readlines())
+
 CLASSIFIERS = [
     'Development Status :: 4 - Beta',
     'Intended Audience :: Developers',
@@ -16,7 +20,6 @@ CLASSIFIERS = [
     'Topic :: Software Development :: Libraries :: Python Modules'
 ]
 
-
 setup(name='datetimex',
       version='0.0.1',
       description='Richer datetimes',
@@ -25,6 +28,6 @@ setup(name='datetimex',
       author_email='miguel@moliware.com',
       url='',
       packages=['datetimex'],
-      install_requires=['forbiddenfruit', 'freezegun'],
+      install_requires=requires(),
       test_suite='tests',
       classifiers=CLASSIFIERS)
