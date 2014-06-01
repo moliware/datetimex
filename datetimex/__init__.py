@@ -1,3 +1,4 @@
-from .int import *
-from .intervals import *
-from .datetimex import *
+import datetimex.int
+import datetimex.intervals
+
+from .api import *

@@ -1,6 +1,6 @@
 """
-durations
-~~~~~~~~~
+datetimex.int
+~~~~~~~~~~~~~
 
 Adds to int objects a few new methods to create intervals.
 
