@@ -1,4 +1,4 @@
-import pydurations
+import datetimex
 import unittest
 
 from datetime import timedelta

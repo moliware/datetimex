@@ -1,11 +1,11 @@
-import pydurations
+import datetimex
 import unittest
 
 from datetime import datetime
 from freezegun import freeze_time
 
 
-class DurationsTestCase(unittest.TestCase):
+class DatesTestCase(unittest.TestCase):
 
     def setUp(self):
         pass

@@ -17,14 +17,14 @@ CLASSIFIERS = [
 ]
 
 
-setup(name='pydurations',
+setup(name='datetimex',
       version='0.0.1',
-      description='Build date intervals the easy way',
+      description='Richer datetimes',
       long_description = open('README.rst').read(),
       author='Miguel Olivares',
       author_email='miguel@moliware.com',
       url='',
-      packages=[''],
+      packages=['datetimex'],
       install_requires=['forbiddenfruit', 'freezegun'],
       test_suite='tests',
       classifiers=CLASSIFIERS)

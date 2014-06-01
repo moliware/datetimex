@@ -1,8 +1,8 @@
 """
-pydurations
-~~~~~~~~~~~
+durations
+~~~~~~~~~
 
-The easy way to work with intervals
+Adds to int objects a few new methods to create intervals.
 
 """
 from datetime import timedelta
