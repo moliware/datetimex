@@ -1,10 +1,11 @@
 """
-dates
-~~~~~
+datetimex.intervals
+~~~~~~~~~~~~~~~~~~~
 
 Adds some methods to intervals in order to get dates. So far:
 
 * ago
+* since
 
 """
 from datetime import datetime, timedelta

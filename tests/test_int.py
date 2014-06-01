@@ -4,7 +4,7 @@ import unittest
 from datetime import timedelta
 
 
-class DurationsTestCase(unittest.TestCase):
+class IntTestCase(unittest.TestCase):
 
     def setUp(self):
         pass
