@@ -7,7 +7,7 @@ except ImportError:
 
 def requires():
   with open('requirements.txt') as fd:
-    return map(lambda x: x.rstrip(), fd.readlines())
+    return list(map(lambda x: x.rstrip(), fd.readlines()))
 
 CLASSIFIERS = [
     'Development Status :: 4 - Beta',
