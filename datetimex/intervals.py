@@ -19,5 +19,6 @@ def ago(self):
 def since(self, date):
     return date + self
 
-curse(timedelta, 'ago', ago)
-curse(timedelta, 'since', since)
+def patch():
+    curse(timedelta, 'ago', ago)
+    curse(timedelta, 'since', since)

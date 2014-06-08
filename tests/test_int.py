@@ -1,4 +1,6 @@
 import datetimex
+datetimex.patch_all()
+
 import unittest
 
 from datetime import timedelta
@@ -47,3 +49,6 @@ class IntTestCase(unittest.TestCase):
 
     def test_years(self):
         self.assertEqual((1).years, timedelta(days=365))
+
+if __name__ == '__main__':
+    unittest.main()

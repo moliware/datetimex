@@ -1,4 +1,6 @@
 import datetimex
+datetimex.patch_all()
+
 import unittest
 
 from datetime import datetime
@@ -19,7 +21,7 @@ class IntervalsTestCase(unittest.TestCase):
 
     @freeze_time('2014-05-18')
     def test_since(self):
-        self.assertEqual((2).days.since(datetimex.now()), datetime(2014, 5, 20))
+        self.assertEqual((2).days.since(datetime.now()), datetime(2014, 5, 20))
 
 
 if __name__ == '__main__':
