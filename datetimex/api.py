@@ -18,8 +18,8 @@ def get_timezone(timezone):
     else:
         return pytz.timezone(timezone)
 
-
-def now(timezone=None):
+@classmethod
+def now(cls, timezone=None):
     return datetime.fromtimestamp(time.time(), get_timezone(timezone))
 
 
